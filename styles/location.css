@@ -1,0 +1,39 @@
+#location {
+    background-color: var(--odd-bg);
+}
+
+#location .content {
+    align-items: center;
+}
+
+#location .text {
+    text-align: center;
+}
+
+#mapid {
+    z-index: 0;
+    width: 100%;
+    height: 16rem;
+    border: 2px solid var(--main-blue);
+}
+
+#mapid .leaflet-popup-content {
+    text-align: center;
+    color: var(--main-blue);
+    font-size: 1.15rem;
+}
+
+@media(min-width: 768px) {
+    #mapid {
+        width: 75%;
+        height: 18rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    #mapid {
+        width: 100%;
+        max-width: 25rem;
+        height: 18rem;
+    }
+}

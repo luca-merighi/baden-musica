@@ -1,0 +1,94 @@
+#services .content {
+    align-items: center;
+}
+
+#services .content .text {
+    text-align: center;
+}
+
+.cards-container {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.cards-container .card {
+    background-color: var(--dark-blue-2);
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 4px solid var(--main-blue);
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.cards-container .card img {
+    width: 4rem;
+}
+
+.cards-container .card h3 {
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+#services .content .contact-button {
+    background-color: var(--green);
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--white);
+    width: 75%;
+
+    transition: background 0.3s;
+}
+
+#services .content .contact-button:hover {
+    background-color: var(--green-hover);
+}
+
+#services .content .contact-button:focus {
+    background-color: var(--green-hover);
+    outline: 2px solid var(--main-blue);
+}
+
+@media(min-width: 768px) {
+    #services .content .text {
+        align-items: center;
+    }
+
+    #services .content .text p {
+        max-width: 75%;
+    }
+
+    .cards-container {
+        width: 75%;
+    }
+
+    #services .content .contact-button {
+        width: 50%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .cards-container {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        max-width: 30rem;
+    }
+
+    #services .content .contact-button {
+        width: 100%;
+        max-width: 15rem;
+    }
+}

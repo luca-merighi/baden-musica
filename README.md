@@ -7,6 +7,7 @@ A página possuí semântica, responsividade e acessibilidade com **CSS** e **Ja
 - **CSS**
 - **JavaScript - DOM**
 - **SwiperJS**
-- **ScrollReveal**
+- **ScrollReveal** 
+- **Leaflet**
 
 ### [Link para a Página](https://baden-musica-k3uqkbba5-luca-merighi.vercel.app/ "Baden Música")
